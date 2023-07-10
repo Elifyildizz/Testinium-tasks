@@ -12,7 +12,7 @@ public class Student {
     private int id;
     private static int idCounter = 1;
     private int classN;
-    private double grade1, grade2, grade3;
+    private Double grade1, grade2, grade3;
     private double gpa;
 
     public Student(String name, String surname) {
@@ -59,10 +59,10 @@ public class Student {
     }
 
     public void setClassN(int classN) {
-        if (classN < 0 && classN > 4) {
-            System.out.println("Class should be between 1 to 4.");
-        } else {
+        if (classN >= 1 && classN <= 4) {
             this.classN = classN;
+        } else {
+            this.classN = 1;
         }
     }
 
@@ -88,7 +88,8 @@ public class Student {
         return name +
                 " " + surname +
                 "\nId:" + id +
-                "\nGrade1: " + grade1 +
+                "\nClass:" + classN +
+                "\nGrade1:" + grade1 +
                 "\nGrade2:" + grade2 +
                 "\nGrade3:" + grade3 +
                 "\nGPA: " + gpa;
