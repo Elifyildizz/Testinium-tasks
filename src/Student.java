@@ -12,7 +12,7 @@ public class Student {
     private int id;
     private static int idCounter = 1;
     private int classN;
-    private Double grade1, grade2, grade3;
+    private double grade1, grade2, grade3;
     private double gpa;
 
     public Student(String name, String surname) {
