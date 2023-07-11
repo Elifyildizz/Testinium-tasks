@@ -8,7 +8,7 @@ public class TestEmployee {
         Instructor ins= new Instructor();
         ins.setFaculty("Engineering");
         ins.setLessonName("Oop");
-        ins.setName("Melike");
+        ins.setName("Caglar");
         ins.setID(938012);
         ins.print();
         //it can print without surname
