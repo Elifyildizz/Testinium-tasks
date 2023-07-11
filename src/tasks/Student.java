@@ -17,6 +17,12 @@ public class Student extends Employee {
     public Student() {
         super();
     }
+    /*
+    public Student(String name, String surname, int ID, int age) {
+        super(name,surname,ID,age);
+        this.gpa=gpa;
+    }
+     */
 
     public double getGpa() {
         return gpa;
